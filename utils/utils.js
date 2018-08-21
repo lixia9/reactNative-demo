@@ -1,29 +1,5 @@
 import { getEnv, toast,getHeader, getUserInfo, getGPS } from "./common";
 
-/**
- *获得车享各平台域名地址方法
- */
-async function getOrigins() {
-    let result = await getEnv(),
-        data = {},
-        env = '';
-    if (result && result.resultCode == 0) {
-        data = result.data;
-        env = data.env;
-        if (env == 'prd') {
-            env = '';
-        }
-    }
-    return {
-        cxjappChexiang: `https://cxjapp.chexiang${env}.com`,//车享家APP
-        hJiaChexiang: `https://h.jia.chexiang${env}.com`,//车享家
-        skJiaChexiang: `https://sk.jia.chexiang${env}.com`,//车品 秒杀
-        cxjActivityChexiang: `https://cxj.activity.chexiang${env}.com`,//活动
-        memberChexiang: `https://member.chexiang${env}.com`,//积分商城
-        mCarChexiang: `https://m.car.chexiang${env}.com`,//新车
-        paiChexiang: `https://pai.chexiang${env}.com`//卖车预约
-    }
-}
 
 /**
  * 获得车享各平台域名地址

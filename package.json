@@ -1,5 +1,5 @@
 {
-  "name": "cxj",
+  "name": "lxl",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,7 +15,6 @@
     "easy-zip2": "^2.0.0",
     "faker": "^4.1.0",
     "native-base": "^2.5.2",
-    "nodeJs-zip": "^1.0.4",
     "react": "^16.3.1",
     "react-devtools": "^3.2.1",
     "react-dom": "^16.3.2",
@@ -36,7 +35,6 @@
     "jest": "22.4.3",
     "react-native-grid-list": "^1.0.8",
     "react-native-router-flux": "^4.0.0-beta.31",
-    "react-native-scrollable-tab-view-recreation": "^1.0.5",
     "react-native-swiper": "^1.5.13",
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.0.1",

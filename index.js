@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
 import App from './App';
 
-AppRegistry.registerComponent('cxj', () => App);
+AppRegistry.registerComponent('lxl', () => App);

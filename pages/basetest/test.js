@@ -9,21 +9,6 @@ import {listener,
   , getHeader, getGPS, getUserInfo, toast, loading, openTalk, newWebview,dataCollection,pay,tel
 } from "../../utils/common"
 
-  // 分享给朋友和朋友圈数据对象
-  var shareData = {
-    friend: {
-      title: "车享会员2018新权益，养车买车和卖车",
-      content: "养车更贴心，买车更优惠，卖车更放心，会员权益全面到“家”",
-      url:  "https:www.baidu.com",
-      imgUrl: "https://s1.cximg.com/msweb02/cx/cxj/cxjappweb/staticactivities/images/share43_2.jpg"
-    },
-    friendQuan: {
-      title: "车享会员2018新权益，养车买车和卖车",
-      content: "养车更贴心，买车更优惠，卖车更放心，会员权益全面到“家”",
-      url: "https:www.qq.com",
-      imgUrl: "https://s1.cximg.com/msweb02/cx/cxj/cxjappweb/staticactivities/images/share43_2.jpg"
-    }
-  };
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -230,11 +215,7 @@ export default class DetailsScreen extends React.Component {
          })}>
              添加爱车
          </Button>
-         <Button onClick={() => shareMsg({wx:shareData.friend,wxtl:shareData.friendQuan}).then((data) => {
-             this.testAlert(JSON.stringify(data))
-         })}>
-             分享
-         </Button>
+         
         <WhiteSpace />
       {/* </PullRefresh> */}
       </ScrollView>

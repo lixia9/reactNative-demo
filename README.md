@@ -1,1 +1,2 @@
-RN DEMO
+npm install 
+react-native eject
