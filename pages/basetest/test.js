@@ -1,5 +1,4 @@
 import React from 'react';
-import PullRefresh from '../../components/PullRefresh'
 import { Button, Drawer, List, WhiteSpace } from 'antd-mobile';
 import { View, StyleSheet, ScrollView, Text, Alert,BackAndroid} from 'react-native';
 

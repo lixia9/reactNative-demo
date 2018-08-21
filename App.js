@@ -5,7 +5,7 @@ import {setJSExceptionHandler, getJSExceptionHandler} from 'react-native-excepti
 import { createStackNavigator, SafeAreaView } from 'react-navigation';
 import Home from "./pages/home"
 import Test from "./pages/basetest/test"
-
+import navconfig from './components/navconfig';
 import { log } from "./utils/api"
 
 const { NativeManager } = NativeModules;
@@ -87,7 +87,7 @@ export default class App extends React.Component {
                 Home,
             }, {
                 //  initialRouteName: 'MyCards',
-                initialRouteName: this.props.page,
+                initialRouteName: "Test",
                 initialRouteParams: _initialRouteParams,
                 /* 首页配置文件 */
                 navigationOptions: ({ navigation }) => (Object.assign(navconfig(navigation, "", {}), {
@@ -167,7 +167,7 @@ export default class App extends React.Component {
 
             </View>
 
-            <View style={{ height: "100%" }}><ErrorPage /></View>
+            <View style={{ height: "100%" }}></View>
 
         </View>)
     }
